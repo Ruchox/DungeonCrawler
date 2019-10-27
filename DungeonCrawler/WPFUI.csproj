@@ -7,7 +7,7 @@
     <ProjectGuid>{BBDE648A-47A9-4E8A-9177-34723EDF8941}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>DungeonCrawler</RootNamespace>
-    <AssemblyName>DungeonCrawler</AssemblyName>
+    <AssemblyName>WPFUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{bea669dd-b9ac-4ebf-8d95-9b0325b7cef6}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
